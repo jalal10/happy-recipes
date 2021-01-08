@@ -3,17 +3,21 @@
   flex-direction: column;
   align-items: center;
   margin: 10px;
+  border-radius: 10px;
+  background-color: white;
+  padding-bottom: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card .card-media {
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   background-position: center;
   background-size: cover;
-  height: 140px;
-  width: 140px;
+  height: 120px;
+  width: 160px;
 }
 .card .card-label {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   margin-top: 10px;
 }

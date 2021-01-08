@@ -1,0 +1,19 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.card .card-media {
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  height: 140px;
+  width: 140px;
+}
+.card .card-label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}

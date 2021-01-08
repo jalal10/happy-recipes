@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+
 import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 import { RecipeCatgorie } from '../models/RecipeCategorie';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-recipe-categories',
+  templateUrl: './recipe-categories.component.html',
+  styleUrls: ['./recipe-categories.component.css']
 })
-export class HomeComponent implements OnInit {
-  title = "Home";
-  recipeCategories: RecipeCatgorie[] = [];
+export class RecipeCategoriesComponent implements OnInit {
+  recipeCategories : Array<RecipeCatgorie> = [];
 
   constructor(private http:HttpClient) { }
 
@@ -18,10 +18,6 @@ export class HomeComponent implements OnInit {
         .subscribe((res)=>{
           this.recipeCategories = res;
         });
-  }
-
-  sortCategories(){
-    this.recipeCategories.sort((a, b)=> b.rank - a.rank);
   }
 
 }
